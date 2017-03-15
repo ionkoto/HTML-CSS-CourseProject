@@ -1,0 +1,31 @@
+There was once a young man who, in his youth, professed his desire to become a great writer.
+When asked to define "Great" he said,
+"I want to write stuff that the whole world will read, stuff that people will react to on a truly emotional level, stuff that will make them scream, cry, howl in pain and anger!"
+He now works for Softuni, writing the Exam tasks.
+
+Softuni Student: Siri, why am I alone?
+Siri: *opens front facing camera*
+
+A SQL query goes into a bar, walks up to two tables and asks, "Can I join you?"
+
+A group of students were listening to a lecture about Java OOP Basics at Softuni.
+After the lecture, one of them leaned over and grabbed a woman’s breast.
+Woman: Hey! That’s private OK ?
+The man hesitated for a second looking confused.
+Man: But I thought we were in the same class.
+
+Q: What's object-oriented way to become wealthy?
+A: Inheritance.
+
+Q: Why do Java programmers have to wear glasses?
+A: Because they don't C#.
+
+Q: How many Object Oriented programmers does it take to change a lightbulb?
+A: None, they send it a message, and it changes itself.
+
+A programmer had a problem.
+He decided to use Java.
+He now has a ProblemFactory.
+
+There are two types of people - people who go to Softuni and people who have fun.
+
