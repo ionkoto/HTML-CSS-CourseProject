@@ -1,0 +1,15 @@
+Chuck Norris can make a class that is both abstract and constant.
+Chuck Norris always uses his own design patterns, and his favorite is the Round­house Kick.
+Chuck Norris always programs using unsafe code.
+Chuck Norris demonstrated the meaning of float.PositiveInfinity by counting to it, twice.
+Chuck Norris doesn’t use VisualStudio, he codes .NET by using a hex editor on the MSIL.
+Chuck Norris never has a bug in his code, without exception!
+Chuck Norris doesn’t write code. He stares at a computer screen until he gets the program he wants.
+Code runs faster when Chuck Norris watches it.
+Chuck Norris methods don't catch exceptions because no one has the guts to throw any at them.
+Chuck Norris will cast a value to any type, just by staring at it.
+Chuck Norris can divide by 0!
+The garbage collector only runs on Chuck Norris code to collect the bodies.
+Chuck Norris can execute 64bit length instructions in a 32bit CPU.
+Chuck Norris can do multiple inheritance in C#.
+Chuck Norris doesn’t need unit tests, because his code always work. ALWAYS.
