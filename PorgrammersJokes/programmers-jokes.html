@@ -6,11 +6,12 @@
     <title>Programmers Jokes</title>
     <script src="scripts/jquery-3.1.1.js"></script>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
 </head>
 <body>
 
 <header class="nav-down">
-    <ul>
+    <ul id="menu-large">
         <li>
             <a href="#">
                 <i class="fa fa-home" aria-hidden="true"></i>
@@ -22,6 +23,7 @@
                 <i class="fa fa-tags" aria-hidden="true"></i>
                 <span>Categories</span>
             </a>
+
             <ul class="drop-ul">
                 <li><a href="#jokes">Graphic</a></li>
                 <li><a href="#css-jokes">CSS</a></li>
@@ -32,20 +34,47 @@
             <i class="fa fa-info-circle" aria-hidden="true"></i>
             <span>About us</span>
         </a>
-        <li><a href="#"><img src="images/others/softuni-code-wizard.png"/></a></li>
+        </li>
+        <li id="logo"><a href="#"><img src="images/others/softuni-code-wizard.png"/></a></li>
         <li><a href="#comedians">
             <i class="fa fa-users" aria-hidden="true"></i>
             <span>Comedians</span>
         </a>
+        </li>
         <li><a href="https://softuni.bg/trainings/courses">
-             <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
             <span>Funny courses</span>
         </a>
+        </li>
         <li><a href="https://softuni.bg/apply">
-        <i class="fa fa-rocket" aria-hidden="true"></i>
+            <i class="fa fa-rocket" aria-hidden="true"></i>
             <span>Get started</span>
         </a>
+        </li>
     </ul>
+    
+    <ul id="menu-small">
+        <li id="categories">
+            <a href="#">
+                Categories
+            </a>
+            <ul class="drop-ul">
+                <li><a href="#jokes">Graphic</a></li>
+                <li><a href="#css-jokes">CSS</a></li>
+                <li><a href="#chuck-norris">Chuck Norris</a></li>
+            </ul>
+        </li>
+        <li><a href="#comedians">
+            Comedians
+        </a></li>
+        <li><a href="https://softuni.bg/trainings/courses">
+            Funny Courses
+        </a></li>
+        <li><a href="https://softuni.bg/apply">
+            Get Started
+        </a></li>
+    </ul>
+
 </header>
 
 <main>
@@ -146,7 +175,7 @@
                 Той е Началото и Краят. Той е и Пътя и Истината и Живота.
                 И който Го следва винаги ще му се компилира кода! Той е толкова Велик, че е учил Чък Норис да
                 програмира!</p>
-            <a href="#">
+            <a href="https://softuni.bg/users/profile/show/nakov">
                 <button>Profile</button>
             </a>
         </article>
@@ -158,7 +187,7 @@
             <p class="description">"Моите Две Десни Ръце" - както го нарича шефа му (Наков е толкова велик, че лява ръка
                 няма). Ангел е човекът с машинно масло в едната ръка и чук в другата. И той непрекъснато смазва и оправя
                 машината на СофтУни.</p>
-            <a href="#">
+            <a href="https://softuni.bg/users/profile/show/achebg">
                 <button>Profile</button>
             </a>
         </article>
@@ -170,7 +199,7 @@
             <p class="description">Ники Банкин е такъв талантлив дизайнер, че когато Бог(Наков) създавал Земята, го
                 извикал да Му помогне. Ники с готовност приел, но проекта по който работил най-усърдно, били женските
                 форми!</p>
-            <a href="#">
+            <a href="https://softuni.bg/users/profile/show/nikbikbank">
                 <button>Profile</button>
             </a>
         </article>
@@ -181,7 +210,7 @@
             <hr>
             <p class="description">Алекс е толкова красива, че е най-красивата. Всички млади кандидат-програмистки тайно
                 й завиждат, защото и те искат да бъдат в предаването на Наков.</p>
-            <a href="#">
+            <a href="https://softuni.bg/users/profile/show/alexandra.svilarova">
                 <button>Profile</button>
             </a>
         </article>
@@ -193,7 +222,7 @@
             <p class="description">RoYal е най-добрият програмист сред играчите на билярд. Той също е единственият
                 човек, който може да създаде задача за изпит със затворени очи. Затова сред някои от студентите е
                 известен и като Човека-Дракон.</p>
-            <a href="#">
+            <a href="https://softuni.bg/users/profile/show/royal">
                 <button>Profile</button>
             </a>
         </article>
@@ -206,7 +235,7 @@
                 Земята, което си е време-пространствен парадокс. Той спокойно би могъл да отиде в Церн и да открие
                 няколко нови закона от квантовата физика, с което ще промени съдбата на хората, но цялата идея с
                 предаването на Наков му е много забавна и затова той седи наоколо да види какво ще стане.</p>
-            <a href="#">
+            <a href="https://softuni.bg/users/profile/show/a_rusenov">
                 <button>Profile</button>
             </a>
         </article>
@@ -218,7 +247,7 @@
             <p class="description">Трифон е най-новият член на екипа на СофтУни. Той наскоро беше посрещнат от Наков с
                 думите:
                 "Welcome to the Force! But you are not a Jedi, yet!"</p>
-            <a href="#">
+            <a href="https://softuni.bg/users/profile/show/trifonapov">
                 <button>Profile</button>
             </a>
         </article>
@@ -265,13 +294,14 @@
 </main>
 
 <footer>
-    <p>This is a Softuni - Web Basics Course - Project created by Yoan Petrushinov</p>
+    <p>This is a Softuni - Web Basics Course - Project</p>
+    <p>created by Yoan Petrushinov</p>
     <p>March 2017</p>
     <div class="social-icons icon-circle icon-zoom list-unstyled list-inline">
-        <a href="" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="" ><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-        <a href="" ><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="" ><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
     </div>
 </footer>
 <script src="scripts/nav-hide.js"></script>

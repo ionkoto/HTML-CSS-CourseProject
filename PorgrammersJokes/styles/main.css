@@ -21,76 +21,82 @@ header{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    transition: top 0.1s ease-in-out;
+    transition: top 0.2s ease-in-out;
     width: 100%;
     z-index: 5;
 }
 .nav-up {
-    top: -200px;
+    top: -216px;
 }
-    ul{
+
+.nav-down  #menu-large{
+    position: relative;
+}
+    #menu-large{
         display: flex;
         list-style: none;
         justify-content: space-around;
         align-items: center;
     }
-        li:hover:nth-child(even) a{
-            border-bottom: 3px solid rgb(42, 116, 223);
-            color:white;
-        }
-        li:hover:nth-child(odd) a{
-            border-bottom: 3px solid rgb(242, 173, 29);
-            color:white;
-        }
-        li:hover:nth-child(4) a{
-            border-bottom: none;
-        }
-            header img{
-                max-width: 180px;
-                max-height: 180px;
-            }
-            a{
-                color: #868686;
-                text-decoration: none;
-                font-size: 24px;
-            }
-            .fa{
-                display: block;
-                text-align: center;
-                padding: 15px;
-                color: rgb(242, 173, 29);
-            }
-        .nav-down  ul{
-            position: relative;
-        }
-        li:nth-child(even) .fa{
-            color: rgb(42, 116, 223);
-        }
-        li:nth-child(odd) .fa{
-            color: rgb(242, 173, 29);
-        }
-        .nav-down ul ul{
-            display: none;
-            position: absolute;
-        }
-        .nav-down ul li:hover > ul{
-            display: inline-block;
-            background: rgb(48, 48, 48);
-            height: 250px;
-        }
-        .nav-down ul ul li{
-            width:170px;
-            position: relative;
+    li:hover:nth-child(even) a{
+        border-bottom: 3px solid rgb(42, 116, 223);
+        color:white;
+    }
+    li:hover:nth-child(odd) a{
+        border-bottom: 3px solid rgb(242, 173, 29);
+        color:white;
+    }
+    li:hover:nth-child(4) a{
+        border-bottom: none;
+    }
+    header img{
+        max-width: 180px;
+        max-height: 180px;
+    }
+    a{
+        color: #868686;
+        text-decoration: none;
+        font-size: 24px;
+    }
+    .fa{
+        display: block;
+        text-align: center;
+        padding: 15px;
+        color: rgb(242, 173, 29);
+    }
+    li:nth-child(even) .fa{
+        color: rgb(42, 116, 223);
+    }
+    .nav-down #menu-large ul{
+        display: none;
+        position: absolute;
+    }
+    .nav-down #menu-large li:hover > ul{
+        display: inline-block;
+        background: rgb(48, 48, 48);
+        height: auto;
+    }
+    .nav-down #menu-large ul li{
+        width:170px;
+        position: relative;
+        display: block;
+        padding-right: 20px;
+        margin: 10px;
+        top:12px;
+        left:47px;
+    }
+    .nav-down #menu-large ul li:hover a{
+        border-bottom: none;
+        color: #868686;
+    }
+    #menu-small{
+        list-style: none;
+        text-align: center;
+        display: none;
+    }
+        #menu-small li{
             display: block;
-            padding-right: 20px;
-            margin: 10px;
-            top:12px;
-            left:47px;
-
-        }
-        .nav-down ul ul li:hover a{
-            border-bottom: none;
-            color: #868686;
+            text-align: center;
         }
 
 main{
@@ -220,15 +226,17 @@ main{
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
         .css-img{
+            margin: 50px;
             width: 490px;
             height: 380px;
-            margin: 50px;
+        }
+        .css-img img{
+            height: 100%;
+            width: 100%;
         }
         .css-img:hover{
-            width: 490px;
-            height: 380px;
-            margin: 50px;
             box-shadow: 18px 18px 5px #000000;
         }
 
@@ -274,7 +282,6 @@ main{
             transition: all 0.8s;
         }
         #chuck-norris p:hover{
-            color: white;
             font-size: 18px;
             color: #5bc0de;
         }
