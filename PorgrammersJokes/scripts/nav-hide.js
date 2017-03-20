@@ -4,6 +4,8 @@ let lastScrollTop = 0;
 let delta = 5;
 let navbarHeight = $('header').outerHeight();
 
+
+
 $(window).scroll(function(event){
     didScroll = true;
 });
@@ -24,10 +26,11 @@ function hasScrolled() {
     if(Math.abs(lastScrollTop - scrollTop) <= delta)
         return;
 
-    // If they scrolled down and are past the navbar, add class .nav-up.
+    // If scrolled down and past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
     if (scrollTop > lastScrollTop && scrollTop > navbarHeight){
         // Scroll Down
+        $("#menu-small").css("display","none");
         $('header').removeClass('nav-down').addClass('nav-up');
     } else {
         // Scroll Up

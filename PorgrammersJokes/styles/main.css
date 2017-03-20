@@ -9,19 +9,19 @@
 body{
     background: rgb(83, 83, 83);
     font-family: Oxygen, sans-serif;
-    padding-top: 200px;
+    padding-top: 165px;
 }
 header{
     padding-top: 15px;
     background: rgb(48, 48, 48);
-    height: 200px;
+    height: 150px;
     max-width: 1600px;
     margin: 0 auto;
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    transition: top 0.2s ease-in-out;
+    transition: top 0.1s linear;
     width: 100%;
     z-index: 5;
 }
@@ -50,8 +50,8 @@ header{
         border-bottom: none;
     }
     header img{
-        max-width: 180px;
-        max-height: 180px;
+        max-width: 140px;
+        max-height: 140px;
     }
     a{
         color: #868686;
@@ -73,21 +73,31 @@ header{
     }
     .nav-down #menu-large li:hover > ul{
         display: inline-block;
-        background: rgb(48, 48, 48);
         height: auto;
     }
-    .nav-down #menu-large ul li{
-        width:170px;
+    .nav-down #menu-large ul li {
+        width: 139px;
         position: relative;
         display: block;
-        padding-right: 20px;
-        margin: 10px;
-        top:12px;
-        left:47px;
+        padding: 10px;
+        /* margin: 7px; */
+        top: 10px;
+        left: 46px;
+        background: rgb(48, 48, 48);
     }
     .nav-down #menu-large ul li:hover a{
         border-bottom: none;
         color: #868686;
+    }
+    header .bars-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    header .fa-bars{
+        display: none;
+        font-size: 28px;
+        margin-right: 20px;
+        padding: 10px;
     }
     #menu-small{
         list-style: none;
@@ -107,7 +117,7 @@ main{
             rgba(83, 83, 83, 0.9),
             rgba(83, 83, 83, 0.9)),
     url(../images/others/Smiles-Smileys-Smile-Yellow-Balls-WallpapersByte-com-3840x2400.jpg);
-    background-size: cover;
+    background-size: contain;
 }
     main > h1{
         text-align: center;
@@ -149,7 +159,6 @@ main{
             flex-grow: 1;
             width: 400px;
             height: 400px;
-
         }
         #jokes .jokes-images i{
             display: inline-block;
@@ -197,7 +206,7 @@ main{
             border-radius: 50%;
             transition: all 1s;
         }
-        #comedians #name{
+        #comedians .name{
             margin-bottom: 20px;
             font-size: 24px;
             font-weight: bold;
@@ -207,8 +216,9 @@ main{
             margin-top: 20px;
             font-size: 16px;
         }
-        #comedians .review a button{
-            margin-top:20px;
+        #comedians .review a div {
+            width: 50px;
+            margin: 20px auto 0;
             background: rgb(48, 48, 48);
             text-transform: uppercase;
             border: none;
@@ -216,7 +226,7 @@ main{
             color: #ffffff;
             padding: 10px 25px;
         }
-        #comedians .review a:hover button{
+        #comedians .review a div:hover {
             background: rgba(48, 48, 48, 0.3);
         }
 
@@ -231,13 +241,17 @@ main{
             margin: 50px;
             width: 490px;
             height: 380px;
+            opacity: 0.7;
+            transition: all 0.5s;
         }
         .css-img img{
             height: 100%;
             width: 100%;
+
         }
         .css-img:hover{
-            box-shadow: 18px 18px 5px #000000;
+            box-shadow: 8px 8px 7px #000000;
+            opacity: 1.0;
         }
 
     main #random-jokes{
@@ -292,13 +306,13 @@ footer{
     background: rgb(16, 16, 16);
     color:white;
     text-shadow: 2px 2px 2px #3b3b3b;
-    line-height: 70px;
+    line-height: 40px;
     text-align: center;
 }
     .social-icons{
         display: flex;
         justify-content: center;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
         .social-icons a{
             margin: 0 20px;
