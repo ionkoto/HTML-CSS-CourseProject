@@ -2,20 +2,22 @@
 @import url('https://fonts.googleapis.com/css?family=Gidugu');
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background: rgb(83, 83, 83);
     font-family: Oxygen, sans-serif;
     padding-top: 165px;
 }
-header{
-    padding-top: 15px;
+
+header {
     background: rgb(48, 48, 48);
-    height: 150px;
     max-width: 1600px;
+    height: 150px;
+    padding-top: 15px;
     margin: 0 auto;
     position: fixed;
     top: 0;
@@ -25,341 +27,379 @@ header{
     width: 100%;
     z-index: 5;
 }
+
 .nav-up {
     top: -216px;
 }
 
-.nav-down  #menu-large{
+.nav-down #menu-large {
     position: relative;
 }
-    #menu-large{
-        display: flex;
-        list-style: none;
-        justify-content: space-around;
-        align-items: center;
-    }
-    li:hover:nth-child(even) a{
-        border-bottom: 3px solid rgb(42, 116, 223);
-        color:white;
-    }
-    li:hover:nth-child(odd) a{
-        border-bottom: 3px solid rgb(242, 173, 29);
-        color:white;
-    }
-    li:hover:nth-child(4) a{
-        border-bottom: none;
-    }
-    header img{
-        max-width: 140px;
-        max-height: 140px;
-    }
-    a{
-        color: #868686;
-        text-decoration: none;
-        font-size: 24px;
-    }
-    .fa{
-        display: block;
-        text-align: center;
-        padding: 15px;
-        color: rgb(242, 173, 29);
-    }
-    li:nth-child(even) .fa{
-        color: rgb(42, 116, 223);
-    }
-    .nav-down #menu-large ul{
-        display: none;
-        position: absolute;
-    }
-    .nav-down #menu-large li:hover > ul{
-        display: inline-block;
-        height: auto;
-    }
-    .nav-down #menu-large ul li {
-        width: 139px;
-        position: relative;
-        display: block;
-        padding: 10px;
-        /* margin: 7px; */
-        top: 10px;
-        left: 46px;
-        background: rgb(48, 48, 48);
-    }
-    .nav-down #menu-large ul li:hover a{
-        border-bottom: none;
-        color: #868686;
-    }
-    header .bars-container{
-        display: flex;
-        justify-content: flex-end;
-    }
-    header .fa-bars{
-        display: none;
-        font-size: 28px;
-        margin-right: 20px;
-        padding: 10px;
-    }
-    #menu-small{
-        list-style: none;
-        text-align: center;
-        display: none;
-    }
-        #menu-small li{
-            display: block;
-            text-align: center;
-        }
 
-main{
+#menu-large {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li:hover:nth-child(even) a {
+    border-bottom: 3px solid rgb(42, 116, 223);
+    color: white;
+}
+
+li:hover:nth-child(odd) a {
+    border-bottom: 3px solid rgb(242, 173, 29);
+    color: white;
+}
+
+li:hover:nth-child(4) a {
+    border-bottom: none;
+}
+
+header img {
+    max-width: 140px;
+    max-height: 140px;
+}
+
+a {
+    color: #868686;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.fa {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    color: rgb(242, 173, 29);
+}
+
+li:nth-child(even) .fa {
+    color: rgb(42, 116, 223);
+}
+
+.nav-down #menu-large ul {
+    display: none;
+    position: absolute;
+}
+
+.nav-down #menu-large li:hover > ul {
+    display: inline-block;
+    height: auto;
+}
+
+.nav-down #menu-large ul li {
+    width: 139px;
+    position: relative;
+    display: block;
+    padding: 10px;
+    top: 10px;
+    left: 46px;
+    background: rgb(48, 48, 48);
+}
+
+.nav-down #menu-large ul li:hover a {
+    border-bottom: none;
+    color: #868686;
+}
+
+header .bars-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .fa-bars {
+    display: none;
+    font-size: 28px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+#menu-small {
+    list-style: none;
+    text-align: center;
+    display: none;
+}
+
+#menu-small li {
+    display: block;
+    text-align: center;
+}
+
+main {
     max-width: 1600px;
     margin: 0 auto;
-
     background: linear-gradient(
             rgba(83, 83, 83, 0.9),
             rgba(83, 83, 83, 0.9)),
     url(../images/others/Smiles-Smileys-Smile-Yellow-Balls-WallpapersByte-com-3840x2400.jpg);
     background-size: contain;
 }
-    main > h1{
-        text-align: center;
-        font-size: 66px;
-        color: white;
-        padding-top: 30px;
-    }
-    main #jokes{
 
-        display: flex;
-        padding-left: 20px;
-        max-width: 1600px;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding-top: 30px;
-    }
-        #jokes .jokes-images{
-            min-height: 490px;
-            text-align: center;
-            margin-right: 20px;
-            box-shadow: 8px 8px 5px #3b3b3b;
-            margin-bottom: 50px;
-            transition: all 0.5s;
-        }
-        #jokes .jokes-images:hover{
-            transform:scale(1.05);
-            background: rgb(83, 83, 83);
-            opacity: 1;
-        }
-        #jokes .jokes-images h2{
-            font-family: Gidugu, sans-serif;
-            font-size: 44px;
-            font-style: italic;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.4);
-        }
-        #jokes .jokes-images img{
-            flex-grow: 1;
-            width: 400px;
-            height: 400px;
-        }
-        #jokes .jokes-images i{
-            display: inline-block;
-            flex-basis: 100px;
-            font-size: 36px;
-            color:rgb(242, 173, 29);
-        }
-        #jokes .jokes-images i:hover{
-            background: rgba(183, 183, 183, 0.2);
-        }
-    main #comedians{
-        padding-top: 50px;
-        background: #ffffff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-        main #comedians h1{
-            text-align: center;
-            font-size: 66px;
-        }
+main > h1 {
+    text-align: center;
+    font-size: 56px;
+    color: white;
+    padding-top: 30px;
+}
 
-        #comedians .review{
-            margin: 30px 20px;
-            color: #ffffff;
-            max-width: 800px;
-            padding: 40px;
-            text-align: center;
-            box-shadow: 8px 8px 5px #3b3b3b;
-            background: linear-gradient(to bottom, #868686 0%, #474747 100%) no-repeat center center;
-        }
-        #comedians .review:hover{
-            background: linear-gradient(to bottom, #868686 100%, #474747 100%) no-repeat center center;
-            text-shadow: 2px 2px 2px #3b3b3b;
-        }
-        #comedians .review:hover img{
-            transform: rotate(360deg) scale(2.2);
-        }
-        #comedians img{
-            display: block;
-            margin: 50px auto;
-            width: 70px;
-            height: 70px;
-            max-width: 140px;
-            border-radius: 50%;
-            transition: all 1s;
-        }
-        #comedians .name{
-            margin-bottom: 20px;
-            font-size: 24px;
-            font-weight: bold;
-            text-shadow: 2px 2px 2px #3b3b3b;
-        }
-        #comedians .description{
-            margin-top: 20px;
-            font-size: 16px;
-        }
-        #comedians .review a div {
-            width: 50px;
-            margin: 20px auto 0;
-            background: rgb(48, 48, 48);
-            text-transform: uppercase;
-            border: none;
-            font-size: 12px;
-            color: #ffffff;
-            padding: 10px 25px;
-        }
-        #comedians .review a div:hover {
-            background: rgba(48, 48, 48, 0.3);
-        }
+main #jokes {
+    display: flex;
+    padding-left: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+}
 
-    main #css-jokes{
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+#jokes .jokes-images {
+    min-height: 490px;
+    text-align: center;
+    margin-right: 20px;
+    box-shadow: 8px 8px 5px #3b3b3b;
+    margin-bottom: 50px;
+    transition: all 0.5s;
+}
 
-        .css-img{
-            margin: 50px;
-            width: 490px;
-            height: 380px;
-            opacity: 0.7;
-            transition: all 0.5s;
-        }
-        .css-img img{
-            height: 100%;
-            width: 100%;
+#jokes .jokes-images:hover {
+    transform: scale(1.05);
+    background: rgb(83, 83, 83);
+    opacity: 1;
+}
 
-        }
-        .css-img:hover{
-            box-shadow: 8px 8px 7px #000000;
-            opacity: 1.0;
-        }
+#jokes .jokes-images h2 {
+    font-family: Gidugu, sans-serif;
+    font-size: 44px;
+    font-style: italic;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.4);
+}
 
-    main #random-jokes{
-        padding-top: 100px;
-        background: rgba(255, 255, 255, 10);
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-        .rnd-joke{
-            font-size: 20px;
-            margin: 30px;
-            width: 40%;
-            color:white;
-            min-width: 300px;
-            padding: 40px;
-            text-align: center;
-            box-shadow: 8px 8px 5px #3b3b3b;
-            background: linear-gradient(to bottom, #868686 0%, #474747 100%) no-repeat center center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            line-height: 35px;
-        }
-        .rnd-joke:hover {
-            background: linear-gradient(to bottom, #868686 100%, #474747 100%) no-repeat center center;
-            text-shadow: 2px 2px 2px #3b3b3b;
-        }
-        .rnd-joke span{
-            font-style: italic;
-        }
+#jokes .jokes-images img {
+    flex-grow: 1;
+    width: 400px;
+    height: 400px;
+}
 
-    main #chuck-norris{
-        background: rgb(48, 48, 48);
-        text-align: center;
-        padding: 60px 0;
-    }
-        #chuck-norris p{
-            color: white;
-            margin: 40px;
-            line-height: 25px;
-            transition: all 0.8s;
-        }
-        #chuck-norris p:hover{
-            font-size: 18px;
-            color: #5bc0de;
-        }
+#jokes .jokes-images i {
+    display: inline-block;
+    flex-basis: 100px;
+    font-size: 36px;
+    color: rgb(242, 173, 29);
+}
 
+#jokes .jokes-images i:hover {
+    background: rgba(183, 183, 183, 0.2);
+}
 
+main #comedians {
+    background: linear-gradient(
+            rgba(83, 83, 83, 0.9),
+            rgba(83, 83, 83, 0.9)),
+    url(../images/others/Smiles-Smileys-Smile-Yellow-Balls-WallpapersByte-com-3840x2400.jpg);
+    background-size: contain;
+    padding-top: 50px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-footer{
+main #comedians h1 {
+    text-align: center;
+    font-size: 66px;
+}
+
+#comedians .profile {
+    margin: 30px 20px;
+    color: #ffffff;
+    max-width: 800px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 8px 8px 5px #3b3b3b;
+    background: linear-gradient(to bottom, #868686 0%, #474747 100%) no-repeat center center;
+}
+
+#comedians .profile:hover {
+    background: linear-gradient(to bottom, #868686 100%, #474747 100%) no-repeat center center;
+    text-shadow: 2px 2px 2px #3b3b3b;
+}
+
+#comedians .profile:hover img {
+    transform: rotate(360deg) scale(2.2);
+}
+
+#comedians img {
+    display: block;
+    margin: 50px auto;
+    width: 70px;
+    height: 70px;
+    max-width: 140px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+#comedians .name {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #3b3b3b;
+}
+
+#comedians .description {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#comedians .profile a div {
+    width: 50px;
+    margin: 20px auto 0;
+    background: rgb(48, 48, 48);
+    text-transform: uppercase;
+    border: none;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 10px 25px;
+}
+
+#comedians .profile a div:hover {
+    background: rgba(48, 48, 48, 0.3);
+}
+
+main #css-jokes {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.css-img {
+    margin: 50px;
+    width: 490px;
+    height: 380px;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+
+.css-img:hover {
+    box-shadow: 8px 8px 7px #000000;
+    opacity: 1.0;
+}
+
+.css-img img {
+    height: 100%;
+    width: 100%;
+}
+
+main #random-jokes {
+    padding-top: 100px;
+    background: rgba(255, 255, 255, 10);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rnd-joke {
+    font-size: 20px;
+    margin: 30px;
+    width: 40%;
+    color: white;
+    min-width: 300px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 8px 8px 5px #3b3b3b;
+    background: linear-gradient(to bottom, #868686 0%, #474747 100%) no-repeat center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 35px;
+}
+
+.rnd-joke:hover {
+    background: linear-gradient(to bottom, #868686 100%, #474747 100%) no-repeat center center;
+    text-shadow: 2px 2px 2px #3b3b3b;
+}
+
+.rnd-joke span {
+    font-style: italic;
+}
+
+main #chuck-norris {
+    background: rgb(48, 48, 48);
+    text-align: center;
+    padding: 60px 0;
+}
+
+#chuck-norris p {
+    color: white;
+    margin: 40px;
+    line-height: 25px;
+    transition: all 0.8s;
+}
+
+#chuck-norris p:hover {
+    font-size: 18px;
+    color: #5bc0de;
+}
+
+footer {
     background: rgb(16, 16, 16);
-    color:white;
+    color: white;
     text-shadow: 2px 2px 2px #3b3b3b;
     line-height: 40px;
     text-align: center;
 }
-    .social-icons{
-        display: flex;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-        .social-icons a{
-            margin: 0 20px;
-            padding: 0;
-        }
 
-        .social-icons .fa {
-            font-size: 1.8em;
-        }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
 
-        .social-icons .fa {
-            padding: 5px;
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            text-align: center;
-            color: #FFF;
-            color: rgba(255, 255, 255, 0.8);
-            -webkit-transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -ms-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-        }
+.social-icons a {
+    margin: 0 20px;
+    padding: 0;
+}
 
-        .social-icons.icon-circle .fa{
-            border-radius: 50%;
-        }
+.social-icons .fa {
+    font-size: 1.8em;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 
-        .social-icons .fa:hover, .social-icons .fa:active {
-            color: #FFF;
-            -webkit-box-shadow: 1px 1px 3px #333;
-            -moz-box-shadow: 1px 1px 3px #333;
-            box-shadow: 1px 1px 3px #333;
-        }
-        .social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active {
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            -o-transform: scale(1.1);
-            transform: scale(1.1);
-        }
+.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
-        .social-icons .fa-facebook,.social-icons .fa-facebook-square{background-color:#3C599F;}
+.social-icons .fa-facebook, .social-icons .fa-facebook-square {
+    background-color: #3C599F;
+}
 
-        .social-icons .fa-google-plus,.social-icons .fa-google-plus-square{background-color:#CF3D2E;}
+.social-icons .fa-google-plus, .social-icons .fa-google-plus-square {
+    background-color: #CF3D2E;
+}
 
-        .social-icons .fa-twitter,.social-icons .fa-twitter-square{background-color:#32CCFE;}
+.social-icons .fa-twitter, .social-icons .fa-twitter-square {
+    background-color: #32CCFE;
+}
 
-        .social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
+.social-icons .fa-youtube, .social-icons .fa-youtube-play, .social-icons .fa-youtube-square {
+    background-color: #C52F30;
+}
